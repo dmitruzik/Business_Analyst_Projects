@@ -1,0 +1,97 @@
+<mxfile host="app.diagrams.net">
+  <diagram name="User Flow - Payment">
+    <mxGraphModel dx="1400" dy="900" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1">
+      <root>
+        <mxCell id="0"/>
+        <mxCell id="1" parent="0"/>
+
+        <!-- Start -->
+        <mxCell id="start" value="Start" style="ellipse;html=1;fillColor=#d5e8d4;" vertex="1" parent="1">
+          <mxGeometry x="100" y="300" width="80" height="80" as="geometry"/>
+        </mxCell>
+
+        <!-- Enter Payment -->
+        <mxCell id="enter" value="Enter Payment Details" style="rounded=1;html=1;" vertex="1" parent="1">
+          <mxGeometry x="220" y="310" width="180" height="60" as="geometry"/>
+        </mxCell>
+
+        <!-- Submit -->
+        <mxCell id="submit" value="Submit Payment" style="rounded=1;html=1;" vertex="1" parent="1">
+          <mxGeometry x="440" y="310" width="160" height="60" as="geometry"/>
+        </mxCell>
+
+        <!-- Fraud Check -->
+        <mxCell id="fraud" value="Fraud Check" style="rounded=1;html=1;fillColor=#dae8fc;" vertex="1" parent="1">
+          <mxGeometry x="640" y="310" width="160" height="60" as="geometry"/>
+        </mxCell>
+
+        <!-- Decision -->
+        <mxCell id="decision" value="Risk Level?" style="rhombus;html=1;fillColor=#fff2cc;" vertex="1" parent="1">
+          <mxGeometry x="840" y="300" width="120" height="80" as="geometry"/>
+        </mxCell>
+
+        <!-- Approved -->
+        <mxCell id="approved" value="Payment Success" style="rounded=1;html=1;fillColor=#d5e8d4;" vertex="1" parent="1">
+          <mxGeometry x="1020" y="180" width="160" height="60" as="geometry"/>
+        </mxCell>
+
+        <!-- Flagged -->
+        <mxCell id="flagged" value="Show Fraud Alert" style="rounded=1;html=1;fillColor=#ffe6cc;" vertex="1" parent="1">
+          <mxGeometry x="1020" y="300" width="180" height="60" as="geometry"/>
+        </mxCell>
+
+        <!-- Blocked -->
+        <mxCell id="blocked" value="Transaction Blocked" style="rounded=1;html=1;fillColor=#f8cecc;" vertex="1" parent="1">
+          <mxGeometry x="1020" y="420" width="180" height="60" as="geometry"/>
+        </mxCell>
+
+        <!-- End -->
+        <mxCell id="end" value="End" style="ellipse;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1250" y="300" width="80" height="80" as="geometry"/>
+        </mxCell>
+
+        <!-- Edges -->
+        <mxCell edge="1" source="start" target="enter" parent="1" style="endArrow=block;">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+
+        <mxCell edge="1" source="enter" target="submit" parent="1" style="endArrow=block;">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+
+        <mxCell edge="1" source="submit" target="fraud" parent="1" style="endArrow=block;">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+
+        <mxCell edge="1" source="fraud" target="decision" parent="1" style="endArrow=block;">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+
+        <mxCell edge="1" value="Low" source="decision" target="approved" parent="1" style="endArrow=block;">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+
+        <mxCell edge="1" value="Medium" source="decision" target="flagged" parent="1" style="endArrow=block;">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+
+        <mxCell edge="1" value="High" source="decision" target="blocked" parent="1" style="endArrow=block;">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+
+        <mxCell edge="1" source="approved" target="end" parent="1" style="endArrow=block;">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+
+        <mxCell edge="1" source="flagged" target="end" parent="1" style="endArrow=block;">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+
+        <mxCell edge="1" source="blocked" target="end" parent="1" style="endArrow=block;">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

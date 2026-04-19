@@ -1,0 +1,95 @@
+<mxfile host="app.diagrams.net">
+  <diagram name="Storyboards">
+    <mxGraphModel dx="2000" dy="1400" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1">
+      <root>
+        <mxCell id="0"/>
+        <mxCell id="1" parent="0"/>
+
+        <!-- ===== STORYBOARD 1: NORMAL PAYMENT ===== -->
+        <mxCell id="title1" value="Storyboard 1: Normal Payment (Low Risk)" style="text;html=1;fontSize=16;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="50" y="40" width="400" height="30" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="s1_1" value="1. Enter Payment Details" style="rounded=1;html=1;" vertex="1" parent="1">
+          <mxGeometry x="50" y="100" width="180" height="80" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="s1_2" value="2. Submit Payment" style="rounded=1;html=1;" vertex="1" parent="1">
+          <mxGeometry x="260" y="100" width="180" height="80" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="s1_3" value="3. Fraud Check (Low Risk)" style="rounded=1;html=1;fillColor=#d5e8d4;" vertex="1" parent="1">
+          <mxGeometry x="470" y="100" width="200" height="80" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="s1_4" value="4. Approved" style="rounded=1;html=1;fillColor=#d5e8d4;" vertex="1" parent="1">
+          <mxGeometry x="700" y="100" width="150" height="80" as="geometry"/>
+        </mxCell>
+
+        <!-- ===== STORYBOARD 2: FRAUD ALERT ===== -->
+        <mxCell id="title2" value="Storyboard 2: Suspicious Transaction (Medium Risk)" style="text;html=1;fontSize=16;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="50" y="260" width="500" height="30" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="s2_1" value="1. Enter Payment (New Location)" style="rounded=1;html=1;" vertex="1" parent="1">
+          <mxGeometry x="50" y="320" width="200" height="80" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="s2_2" value="2. Fraud Check (Medium Risk)" style="rounded=1;html=1;fillColor=#fff2cc;" vertex="1" parent="1">
+          <mxGeometry x="280" y="320" width="200" height="80" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="s2_3" value="3. Show Fraud Alert" style="rounded=1;html=1;fillColor=#ffe6cc;" vertex="1" parent="1">
+          <mxGeometry x="510" y="320" width="200" height="80" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="s2_4" value="4. User Confirms" style="rounded=1;html=1;fillColor=#d5e8d4;" vertex="1" parent="1">
+          <mxGeometry x="740" y="320" width="160" height="80" as="geometry"/>
+        </mxCell>
+
+        <!-- ===== STORYBOARD 3: BLOCKED FRAUD ===== -->
+        <mxCell id="title3" value="Storyboard 3: Fraud Blocked (High Risk)" style="text;html=1;fontSize=16;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="50" y="480" width="450" height="30" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="s3_1" value="1. Suspicious Payment Attempt" style="rounded=1;html=1;" vertex="1" parent="1">
+          <mxGeometry x="50" y="540" width="200" height="80" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="s3_2" value="2. Fraud Check (High Risk)" style="rounded=1;html=1;fillColor=#f8cecc;" vertex="1" parent="1">
+          <mxGeometry x="280" y="540" width="200" height="80" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="s3_3" value="3. Transaction Blocked" style="rounded=1;html=1;fillColor=#f8cecc;" vertex="1" parent="1">
+          <mxGeometry x="510" y="540" width="200" height="80" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="s3_4" value="4. Alert Analyst" style="rounded=1;html=1;fillColor=#ffe6cc;" vertex="1" parent="1">
+          <mxGeometry x="740" y="540" width="160" height="80" as="geometry"/>
+        </mxCell>
+
+        <!-- ===== STORYBOARD 4: ANALYST REVIEW ===== -->
+        <mxCell id="title4" value="Storyboard 4: Analyst Review Flow" style="text;html=1;fontSize=16;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="50" y="700" width="400" height="30" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="s4_1" value="1. Open Dashboard" style="rounded=1;html=1;" vertex="1" parent="1">
+          <mxGeometry x="50" y="760" width="180" height="80" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="s4_2" value="2. View Flagged Transactions" style="rounded=1;html=1;" vertex="1" parent="1">
+          <mxGeometry x="260" y="760" width="220" height="80" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="s4_3" value="3. Review Details" style="rounded=1;html=1;" vertex="1" parent="1">
+          <mxGeometry x="510" y="760" width="180" height="80" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="s4_4" value="4. Approve / Block" style="rounded=1;html=1;" vertex="1" parent="1">
+          <mxGeometry x="720" y="760" width="180" height="80" as="geometry"/>
+        </mxCell>
+
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
